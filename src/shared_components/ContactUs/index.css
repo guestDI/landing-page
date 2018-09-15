@@ -1,0 +1,99 @@
+.contact-form {
+    position: relative;
+    width: auto;
+    height: auto;
+    background: inherit;
+    /*border-radius: 20px;*/
+    /*border: solid 1px #777777;*/
+    /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);*/
+}
+
+.contact-form .input-box {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+    /*width: 100%;*/
+    padding: 10px 0 20px 15px;
+}
+
+.contact-form .message{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.contact-form .message .input-box{
+    align-items: center;
+}
+
+/*.contact-form .input-box span {*/
+    /*font-family: 'Dosis', sans-serif;*/
+    /*font-weight: 600;*/
+    /*font-size: 14px;*/
+    /*margin-top: 5%;*/
+    /*padding-bottom: 10px;*/
+/*}*/
+
+.contact-form .input-box .input-field {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #fefdff;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    padding: 0 10px;
+    /*text-align: left;*/
+    margin: 0em;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px #fefdff;
+    /*border-bottom: 2px solid #c3c2c4;*/
+}
+
+.contact-form .input-box .message-input-field {
+    resize: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    color: #fefdff;
+    /*line-height: 1.2;*/
+    display: block;
+    width: 100%;
+    height: 130px;
+    background: transparent;
+    padding: 5px 10px;
+    /*text-align: left;*/
+    margin: 0em;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px #fefdff;
+    /*border-bottom: 2px solid #c3c2c4;*/
+}
+
+.contact-form .input-box .input-field::-webkit-input-placeholder { -webkit-transition: opacity .5s;
+    transition: opacity .5s; font-style: italic; color: #fefdff; font-size: 12px; opacity: 0.8}
+.contact-form .input-box .input-field:focus::-webkit-input-placeholder { opacity: 0; }
+.contact-form .input-box .input-field:focus {
+    border: 1px solid #f05f40;
+    color: #fefdff;
+    transition: 0.2s ease;
+    outline: none;
+}
+
+.contact-form .input-box .message-input-field::-webkit-input-placeholder { opacity: 0.8; -webkit-transition: opacity .5s;
+    transition: opacity .5s; font-style: italic; color: #fefdff; font-size: 12px}
+.contact-form .input-box .message-input-field:focus::-webkit-input-placeholder { opacity: 0; }
+.contact-form .input-box .message-input-field:focus {
+    border: 1px solid #f05f40;
+    color: #fefdff;
+    transition: 0.2s ease;
+    outline: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form .input-box  {
+        padding-left: 15px !important;
+        width: 95%;
+        padding-right: 0 !important;
+    }
+}

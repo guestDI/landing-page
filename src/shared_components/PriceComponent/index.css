@@ -1,0 +1,120 @@
+.pricing{
+    position: relative;
+    display: block;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    background-color: #FFF;
+    z-index: 11;
+    margin: 15px auto;
+    font-family: Montserrat, sans-serif;
+    width: 270px;
+    transition: all .4s ease-in-out;
+}
+.pricing_popular {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 32px;
+    right: 0;
+    background: #f05f40;
+    color: #fff;
+    padding: 2px 8px;
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    letter-spacing: .1em;
+}
+
+.pricing:hover {
+    border-top: 4px solid #f05f40;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.pricing:hover .price{
+    background-color: #f05f40;
+    color: #fff;
+}
+
+.pricing .submit_button {
+    color: #f05f40;
+}
+.pricing:hover .submit_button{
+    background-color: #f05f40;
+    color: #fff;
+}
+.pricing:hover .duration{
+    color: #fff;
+}
+
+.pricing_head{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pricing .price_title{
+    display: block;
+    padding: 40px 0px 20px;
+    text-transform: uppercase;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+    font-weight: 700;
+}
+
+.pricing .price{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid #f05f40;
+}
+
+.pricing:hover .price{
+
+}
+
+.pricing .price h3 {
+    font-size: 42px;
+    margin: 0px;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.pricing .duration {
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #10161A;
+    -webkit-transition: 0.2s color;
+    transition: 0.2s color;
+}
+
+.pricing .pricing_content {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing .pricing_content p{
+    margin: 0 0 10px;
+}
+
+.pricing .submit_button{
+    margin: 15px 0 30px;
+    outline: none;
+}
+
+.pricing .submit_button:focus{
+    color: #f05f40;
+    outline: none;
+}
