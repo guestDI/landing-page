@@ -15,8 +15,8 @@ const priceComponent = (props) => {
                 <span className="price_title">{props.tariffName}</span>
                 <div className="price">
                     <h3>
-                        $9
-                        <span className="duration">/ month</span>
+                        {props.price}
+                        <span className="duration">{props.duration}</span>
                     </h3>
                 </div>
             </div>

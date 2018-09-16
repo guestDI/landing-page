@@ -11,6 +11,7 @@ h6{
 .nav-wrapper{
     text-align: right;
     margin: 0 3% auto;
+    /*background: rgba(252, 252, 252, 0.1);*/
 }
 
 .tabs{

@@ -6,6 +6,7 @@ import PriceComponent from '../../shared_components/PriceComponent'
 import Contacts from './Contacts'
 import AboutUs from './AboutUs'
 import CommonButton from "../../shared_components/CommonButton";
+import Youtube from "../../shared_components/Youtube/index"
 
 const social_contacts = [
     {twitter: "https://twitter.com/"},
@@ -39,6 +40,9 @@ class Welcome extends Component {
     }
 
     onSignUpCall = () => {
+        window.location.href = 'https://www.gymcms.ru/registration';
+
+
         // const getAlert = () => (
         //     <SignUp show={this.state.showSignUpModal} close={() => this.cancelAlert()}/>
         // );
@@ -74,16 +78,16 @@ class Welcome extends Component {
                     <div className="row row-centered">
                         <div className="welcome-header col-md-10 col-centered ">
                             <h1 className=" text-upper-case">
-                                The best way to create your own tournament
+                                Лучший способ управления свом бизнесом
                             </h1>
                             <hr/>
                         </div>
                         <div className="welcome-text col-md-8 col-centered">
-                            <p>StartTournament can help you build your own tournament with your own rules and schedule!</p>
+                            <p>Андромеда фитнес позволит легко управлять тренажерным залом</p>
                         </div>
                         <div className="get_started_wrapper">
                             <button className="get_started_wrapper_button" onClick={() => this.scrollInToSection()}>
-                                Get Started Now
+                                Начать
                             </button>
                             <div className="scroll_down" >
                                 <div className="scroll_down__button" style={{display: "block"}} onClick={() => this.scrollInToSection()}/>
@@ -97,25 +101,45 @@ class Welcome extends Component {
                 <div className="container">
                     <div className="row row-centered">
                         <div className="col-md-8 col-centered section-header">
-                            <h2 className="text-upper-case">Core Features</h2>
+                            <h2 className="text-upper-case">Возможности</h2>
                             <hr/>
                         </div>
                     </div>
                     <div className="row services-row">
-                        <div className="service-tile">
+                        <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/field.png')}  />*/}
-                            <h3>Set tournament type</h3>
-                            <p className="desc">Choose tournament type from season to knockout</p>
+                            <h3>Эффективно организуйте работу</h3>
+                            <p className="desc">Организует работу клуба -
+                                контролируя прейскурант услуг ценовую политику и показатели работы.</p>
                         </div>
-                        <div className="service-tile">
+                        <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/rule.png')}  />*/}
-                            <h3>Set own rules</h3>
-                            <p className="desc">Define rules for you tournament</p>
+                            <h3>Контролируйте посещения</h3>
+                            <p className="desc">Легко контролируйте посещения</p>
                         </div>
-                        <div className="service-tile">
+                        <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/statistic.png')}  />*/}
-                            <h3>Track statistic</h3>
-                            <p className="desc">Track players statistic and create reports based on it</p>
+                            <h3>Мобильный клиент</h3>
+                            <p className="desc">Уникальная система выдачи мобильных абонементов, больше нет нужды носить с собой клубную карту.
+                                Современный мобильный клиент позволит посетителям
+                                вашего зала использовать его в качестве единой карты доступа, а также для отслеживания текущго статуса абонементов.</p>
+                        </div>
+                        <div className="service-tile col-lg-4 col-xs-4">
+                            {/*<img src={require('../../../images/statistic.png')}  />*/}
+                            <h3>Увеличивайте продажи</h3>
+                            <p className="desc">CRM учитывает заинтересовавшихся и позволяет предложить им услуги фитнес клуба.
+                                Рассрочка позволит клиенту большему числу клиентов приобрести дорогостоящие карты.</p>
+                        </div>
+                        <div className="service-tile col-lg-4 col-xs-4">
+                            {/*<img src={require('../../../images/statistic.png')}  />*/}
+                            <h3>Удерживаейте клиентов</h3>
+                            <p className="desc">Отчеты по заканчивающимся картам позволяют вовремя предложить клиенту продление.</p>
+                        </div>
+                        <div className="service-tile col-lg-4 col-xs-4">
+                            {/*<img src={require('../../../images/statistic.png')}  />*/}
+                            <h3>Анализируйте</h3>
+                            <p className="desc">Позволяет оценить показатели работы клуба и персонала. Отчеты по динамике продаж,
+                                посещений, выручке персонала.</p>
                         </div>
                     </div>
                 </div>
@@ -125,23 +149,15 @@ class Welcome extends Component {
                 <div className="container">
                     <div className="row row-centered">
                         <div className="col-md-8 col-centered section-header">
-                            <h2 className="text-upper-case">Recent Projects</h2>
+                            <h2 className="text-upper-case">Демо</h2>
                             <hr/>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="team" className="team_section">
-                <div className="container" >
-                    <div className="row row-centered">
-                        <div className="col-md-8 col-centered member_desc">
-                            {/*<p>{this.state.team[this.state.activeMember].about}</p>*/}
-                        </div>
+                    <div className="row services-row">
+                        <Youtube/>
                     </div>
                 </div>
             </section>
-
             <section id="feedbacks" className="feedbacks_section">
                 <div className="container" >
                     <div className="row row-centered">
@@ -166,7 +182,7 @@ class Welcome extends Component {
                     </div>
                     <div className="row price-row">
                         <div className="col-xs-12 col-sm-4 price_col">
-                            <PriceComponent tariffName="Базовый" onClick={this.onSignUpCall}/>
+                            <PriceComponent price="Бесплатно" tariffName="Базовый" onClick={this.onSignUpCall} duration="30 дней"/>
                         </div>
                         {/*<div className="col-xs-12 col-sm-4 price_col">*/}
                             {/*<PriceComponent popular tariffName="Standart" onClick={this.onSignUpCall}/>*/}
@@ -189,7 +205,7 @@ class Welcome extends Component {
                         </div>
                         <div className="col-md-5 col-xs-12 pull-right">
                             <div className="info">
-                                <h4 className="title">Leave Message</h4>
+                                <h4 className="title">Оставить сообщение</h4>
                                 <ContactUs/>
                             </div>
                             <CommonButton className="send_message__button" text="Отправить" onClick={this.props.onClick}/>

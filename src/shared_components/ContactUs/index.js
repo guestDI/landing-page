@@ -10,23 +10,23 @@ class ContactUs extends Component {
                 <div className="row">
                     <div className="col-md-6 input-box" style={{paddingRight: '10px'}}>
                         <Input className="input-field" required min="6" max="14" type="text" onTextChanged={this.onUsernameChanged}
-                               name="username" placeholder="Name" />
+                               name="username" placeholder="Имя" />
                     </div>
                     <div className="col-md-6 input-box" style={{paddingLeft: '25px'}}>
                         <Input className="input-field" required min="6" max="14" type="text" onTextChanged={this.onSubjectChanged}
-                               name="email" placeholder="Email" />
+                               name="email" placeholder="Электронная почта" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12 input-box">
                         <Input className="input-field" required min="6" max="14" type="text" onTextChanged={this.onSubjectChanged}
-                               name="subject" placeholder="Subject" />
+                               name="subject" placeholder="Тема" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12 input-box">
                         <Textarea className="message-input-field" required min="6" max="256" type="text" onTextChanged={this.onMessageChanged}
-                                  name="message" placeholder="Message" />
+                                  name="message" placeholder="Сообщение" />
                     </div>
                 </div>
             </form>
