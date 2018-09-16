@@ -7,8 +7,8 @@ const aboutUs = (props) =>{
             let keyName = Object.keys(c)[0];
             let link = c[keyName]
             return(
-                <li className="about_row">
-                    <a key={`${i}`} href={`${link}`}>
+                <li key={`${i}`} className="about_row">
+                    <a href={`${link}`}>
                         {keyName}
                     </a>
                 </li>

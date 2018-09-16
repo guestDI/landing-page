@@ -100,6 +100,31 @@ hr{
 .get_started_wrapper_button:focus{
     outline:none;
 }
+
+.welcome_button{
+    color: #ffffff;
+    border-radius: 1.5em;
+    font-weight: 500;
+    background-color: #f05f40 !important;
+    border: solid #d85e3e !important;
+    outline: none;
+    width: 130px;
+}
+
+.welcome_button.demo{
+    margin-left: 15px;
+}
+
+.welcome_button:focus {
+    color: #ffffff;
+    outline: none !important;
+}
+
+.welcome_button:hover:before {
+    transform: skewX(-45deg) translateX(15em);
+    transition: all 0.5s ease-in-out;
+}
+
 @keyframes sheen {
     0% {
         transform: skewY(-45deg) translateX(0);
@@ -339,6 +364,12 @@ of those sections to manage the look and feel of the site. */
     border-radius: 1.5em;
     font-weight: 500;
     background-color: #f05f40 !important;
+    outline: none;
+}
+
+.send_message__button:focus {
+    color: #ffffff;
+    outline: none !important;
 }
 
 .send_message__button:hover:before {

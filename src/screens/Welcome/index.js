@@ -52,6 +52,11 @@ class Welcome extends Component {
         // });
     }
 
+    onDemoOpen = () => {
+        window.location.href = 'https://www.gymcms.ru/demo';
+    }
+
+
     // cancelAlert = () => {
     //     this.setState({
     //         signUpModal: null
@@ -86,11 +91,10 @@ class Welcome extends Component {
                             <p>Андромеда фитнес позволит легко управлять тренажерным залом</p>
                         </div>
                         <div className="get_started_wrapper">
-                            <button className="get_started_wrapper_button" onClick={() => this.scrollInToSection()}>
-                                Начать
-                            </button>
+                            <CommonButton className="welcome_button" text="Начать" onClick={this.scrollInToSection}/>
+                            <CommonButton className="welcome_button demo" text="Демо" onClick={this.onDemoOpen}/>
                             <div className="scroll_down" >
-                                <div className="scroll_down__button" style={{display: "block"}} onClick={() => this.scrollInToSection()}/>
+                                <div className="scroll_down__button" style={{display: "block"}} />
                             </div>
                         </div>
                     </div>
