@@ -158,19 +158,19 @@ class Welcome extends Component {
                     </div>
                 </div>
             </section>
-            <section id="feedbacks" className="feedbacks_section">
-                <div className="container" >
-                    <div className="row row-centered">
-                        <div className="col-md-8 col-centered section-header">
-                            <h2 className="text-upper-case">What people say</h2>
-                            <hr/>
-                        </div>
-                    </div>
-                    <div className="row">
+            {/*<section id="feedbacks" className="feedbacks_section">*/}
+                {/*<div className="container" >*/}
+                    {/*<div className="row row-centered">*/}
+                        {/*<div className="col-md-8 col-centered section-header">*/}
+                            {/*<h2 className="text-upper-case">Наши клиенты</h2>*/}
+                            {/*<hr/>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="row">*/}
 
-                    </div>
-                </div>
-            </section>
+                    {/*</div>*/}
+                {/*</div>*/}
+            {/*</section>*/}
 
             <section ref="prices" id="prices" className="prices-section">
                 <div className="container">
