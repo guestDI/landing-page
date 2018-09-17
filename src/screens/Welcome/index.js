@@ -4,6 +4,7 @@ import NavigationBar from '../../shared_components/NavigationBar'
 import ContactUs from '../../shared_components/ContactUs/index'
 import PriceComponent from '../../shared_components/PriceComponent'
 import Contacts from './Contacts'
+import SocialContacts from './Contacts/SocialContacts/index'
 import AboutUs from './AboutUs'
 import CommonButton from "../../shared_components/CommonButton";
 import Youtube from "../../shared_components/Youtube/index"
@@ -200,18 +201,14 @@ class Welcome extends Component {
                 <div className="container">
                     <div className="row row-centered">
                         <div className="col-md-3 contact-section__contacts">
-                            <Contacts social_contacts={social_contacts}/>
+                            <Contacts />
                         </div>
                         <div className="col-md-3 contact-section__about">
                             <AboutUs about_links={about_links}/>
                         </div>
-                        <div className="col-md-5 col-xs-12 pull-right">
-                            <div className="info">
-                                <h4 className="title">Оставить сообщение</h4>
-                                <ContactUs/>
-                            </div>
-                            <CommonButton className="send_message__button" text="Отправить" onClick={this.props.onClick}/>
-                        </div>
+                    </div>
+                    <div className="row row-centered social_icons">
+                        <SocialContacts social_contacts={social_contacts}/>
                     </div>
                     <hr/>
                     <div className="copyright">
