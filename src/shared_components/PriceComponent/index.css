@@ -7,7 +7,7 @@
     z-index: 11;
     margin: 15px auto;
     font-family: Montserrat, sans-serif;
-    width: 270px;
+    width: 350px;
     transition: all .4s ease-in-out;
 }
 .pricing_popular {
@@ -101,12 +101,12 @@
 
 .pricing .pricing_content {
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     list-style: none;
 }
 
-.pricing .pricing_content p{
-    margin: 0 0 10px;
+.pricing .pricing_content li{
+    margin: 0 0 20px;
 }
 
 .pricing .submit_button{

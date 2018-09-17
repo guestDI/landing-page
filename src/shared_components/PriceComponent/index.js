@@ -22,13 +22,19 @@ const priceComponent = (props) => {
             </div>
             <ul className="pricing_content">
                 <li>
-                    <p>1GB Disk Space</p>
+                    <p>Функциональность без ограничений</p>
                 </li>
                 <li>
-                    <p>100 Email Account</p>
+                    <p>Мобильный клиент с онлайн абонементом</p>
                 </li>
                 <li>
-                    <p>24/24 Support</p>
+                    <p>Неограниченное число клиентов</p>
+                </li>
+                <li>
+                    <p>Формирование отчетности без каких-либо ограничений</p>
+                </li>
+                <li>
+                    <p>24/7 поддержка</p>
                 </li>
             </ul>
             <CommonButton className="submit_button" text="Выбрать" onClick={props.onClick}/>

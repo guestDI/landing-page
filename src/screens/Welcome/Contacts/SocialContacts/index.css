@@ -27,7 +27,7 @@
 }
 
 .contacts_section__social a {
-    color: rgba(207, 207, 207, 0.7);
+    color: #fff;
     font-size: 1.4em;
     /*border-radius: 50%;*/
     height: 1.8em;
@@ -53,7 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid rgba(255,255,255,.30);
+    border: 1px solid #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
@@ -68,10 +68,10 @@
 }
 
 .contacts_section__social a:hover{
-    color: #fff;
+    color: #ff6243;
 }
 
 .contacts_section__social a:hover::before {
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #ff6243;
+    color: #ff6243;
 }
