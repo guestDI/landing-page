@@ -17,7 +17,7 @@ const contacts = (props) =>{
 
     return(
         <div>
-            <h4 className="title text-upper-case">Contacts</h4>
+            <h4 className="title text-upper-case">Контакты</h4>
             <ul className="contacts_section">
                 <li className="contact_row">
                     <i className="fa fa-map-marker"/>

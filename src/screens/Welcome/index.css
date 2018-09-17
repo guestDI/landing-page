@@ -106,7 +106,7 @@ hr{
     border-radius: 1.5em;
     font-weight: 500;
     background-color: #f05f40 !important;
-    border: solid #d85e3e !important;
+    /*border: solid #d85e3e !important;*/
     outline: none;
     width: 130px;
 }
@@ -228,15 +228,15 @@ of those sections to manage the look and feel of the site. */
     background-size: cover;
     cursor: pointer;
 }
-.services-section .services-row .service-tile h3{
-    font-size: 1.51em;
+.services-section .services-row .service-tile h4{
+    font-size: 1.3em;
     line-height: 1.05em;
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 .services-section .services-row .service-tile .desc{
-    font-size: 14px;
+    font-size: 13px;
     color: #777777;
     font-weight: 500;
     width: 80%;

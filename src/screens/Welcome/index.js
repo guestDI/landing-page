@@ -15,9 +15,8 @@ const social_contacts = [
 ]
 
 const about_links = [
-    {"About Us": "#"},
-    {"Our Team": "#"},
-    {"Careers and Culture": "#"}
+    {"О нас": "#"},
+    {"Наша команда": "#"},
 ]
 
 class Welcome extends Component {
@@ -92,7 +91,7 @@ class Welcome extends Component {
                         </div>
                         <div className="get_started_wrapper">
                             <CommonButton className="welcome_button" text="Начать" onClick={this.scrollInToSection}/>
-                            <CommonButton className="welcome_button demo" text="Демо" onClick={this.onDemoOpen}/>
+                            {/*<CommonButton className="welcome_button demo" text="Демо" onClick={this.onDemoOpen}/>*/}
                             <div className="scroll_down" >
                                 <div className="scroll_down__button" style={{display: "block"}} />
                             </div>
@@ -112,38 +111,37 @@ class Welcome extends Component {
                     <div className="row services-row">
                         <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/field.png')}  />*/}
-                            <h3>Эффективно организуйте работу</h3>
-                            <p className="desc">Организует работу клуба -
-                                контролируя прейскурант услуг ценовую политику и показатели работы.</p>
-                        </div>
-                        <div className="service-tile col-lg-4 col-xs-4">
-                            {/*<img src={require('../../../images/rule.png')}  />*/}
-                            <h3>Контролируйте посещения</h3>
-                            <p className="desc">Легко контролируйте посещения</p>
+                            <h4>Эффективно организуйте работу</h4>
+                            <p className="desc">Организует работу вашего тренажерного зала, контролируя ценовую политику и показатели работы персонала.</p>
                         </div>
                         <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/statistic.png')}  />*/}
-                            <h3>Мобильный клиент</h3>
-                            <p className="desc">Уникальная система выдачи мобильных абонементов, больше нет нужды носить с собой клубную карту.
-                                Современный мобильный клиент позволит посетителям
-                                вашего зала использовать его в качестве единой карты доступа, а также для отслеживания текущго статуса абонементов.</p>
+                            <h4>Снижайте затраты</h4>
+                            <p className="desc">Онлайн версия не требующая установки. Аналитические отчеты по продажам и посещениям позволяют выявить непопулярные занятия, услуги, персонал и минимизировать расходы на них.</p>
                         </div>
                         <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/statistic.png')}  />*/}
-                            <h3>Увеличивайте продажи</h3>
-                            <p className="desc">CRM учитывает заинтересовавшихся и позволяет предложить им услуги фитнес клуба.
-                                Рассрочка позволит клиенту большему числу клиентов приобрести дорогостоящие карты.</p>
+                            <h4>Экономьте время</h4>
+                            <p className="desc">Экономит время и минимизирует ошибки. Все часто используемые действия автоматизированы и легко доступны. Удобно записать, отметить посещение.
+                                Программа автоматически напоминает клиентам и персоналу о тренировках, позволяет контролировать расписание.</p>
                         </div>
-                        <div className="service-tile col-lg-4 col-xs-4">
-                            {/*<img src={require('../../../images/statistic.png')}  />*/}
-                            <h3>Удерживаейте клиентов</h3>
-                            <p className="desc">Отчеты по заканчивающимся картам позволяют вовремя предложить клиенту продление.</p>
-                        </div>
-                        <div className="service-tile col-lg-4 col-xs-4">
-                            {/*<img src={require('../../../images/statistic.png')}  />*/}
-                            <h3>Анализируйте</h3>
-                            <p className="desc">Позволяет оценить показатели работы клуба и персонала. Отчеты по динамике продаж,
-                                посещений, выручке персонала.</p>
+                        <div style={{paddingTop: '30px'}}>
+                            <div className="service-tile col-lg-4 col-xs-4">
+                                {/*<img src={require('../../../images/statistic.png')}  />*/}
+                                <h4>Мобильный клиент</h4>
+                                <p className="desc">Больше нет нужды носить с собой клубную карту. Мобильный клиент позволит посетителям вашего зала использовать его в качестве единой карты доступа, а также для отслеживания текущго статуса абонементов.</p>
+                            </div>
+                            <div className="service-tile col-lg-4 col-xs-4">
+                                {/*<img src={require('../../../images/rule.png')}  />*/}
+                                <h4>Контролируйте посещения</h4>
+                                <p className="desc">Контролируйте посещения в один клик. Нотификации по заканчивающимся картам позволяют вовремя предложить клиенту продление.</p>
+                            </div>
+                            <div className="service-tile col-lg-4 col-xs-4">
+                                {/*<img src={require('../../../images/statistic.png')}  />*/}
+                                <h4>Анализируйте</h4>
+                                <p className="desc">Позволяет оценить показатели работы клуба и персонала. Отчеты по динамике продаж,
+                                    посещений, выручке персонала.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

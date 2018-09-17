@@ -18,7 +18,7 @@ const aboutUs = (props) =>{
 
     return(
         <div>
-            <h4 className="title text-upper-case">About Us</h4>
+            <h4 className="title text-upper-case">О нас</h4>
             <ul className="contacts_section">
                 {about_links}
             </ul>
