@@ -83,7 +83,7 @@ class Welcome extends Component {
                         <div className="welcome-header col-md-10 col-centered ">
                             <img src={require('../../images/android-chrome-256x256.png')} style={{width: '80px', height: '80px'}} />
                             <h1 className="text-upper-case" style={{paddingBottom: '20px'}}>
-                                Лучший способ управления свом бизнесом
+                                Лучший способ управления своим бизнесом
                             </h1>
                         </div>
                         <div className="welcome-text col-md-8 col-centered">
