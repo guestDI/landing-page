@@ -9,6 +9,7 @@
     font-family: Montserrat, sans-serif;
     width: 350px;
     transition: all .4s ease-in-out;
+    border-top: 4px solid #f05f40;
 }
 .pricing_popular {
     text-transform: uppercase;
@@ -25,27 +26,28 @@
     letter-spacing: .1em;
 }
 
-.pricing:hover {
-    border-top: 4px solid #f05f40;
-    transform: scale(1.1);
-    cursor: pointer;
-}
+/*.pricing:hover {*/
+    /*border-top: 4px solid #f05f40;*/
+    /*transform: scale(1.1);*/
+    /*cursor: pointer;*/
+/*}*/
 
-.pricing:hover .price{
-    background-color: #f05f40;
-    color: #fff;
-}
+/*.pricing:hover .price{*/
+    /*background-color: #f05f40;*/
+    /*color: #fff;*/
+/*}*/
 
 .pricing .submit_button {
-    color: #f05f40;
-}
-.pricing:hover .submit_button{
+    color: #fff;
     background-color: #f05f40;
-    color: #fff;
 }
-.pricing:hover .duration{
-    color: #fff;
-}
+/*.pricing:hover .submit_button{*/
+    /*background-color: #f05f40;*/
+    /*color: #fff;*/
+/*}*/
+/*.pricing:hover .duration{*/
+    /*color: #fff;*/
+/*}*/
 
 .pricing_head{
     position: relative;
@@ -63,21 +65,22 @@
 
 .pricing .price{
     position: relative;
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     line-height: 140px;
     text-align: center;
     margin: auto;
     border-radius: 50%;
     border: 1px solid #f05f40;
+    background-color: #f05f40;
 }
 
 .pricing:hover .price{
 
 }
 
-.pricing .price h3 {
-    font-size: 42px;
+.pricing .price h4 {
+    font-size: 25px;
     margin: 0px;
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
@@ -85,6 +88,7 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     top: 50%;
+    color: #fff;
     position: absolute;
     left: 0;
     right: 0;
@@ -92,21 +96,31 @@
 
 .pricing .duration {
     display: block;
-    font-size: 14px;
+    font-size: 13px;
+    padding-top: 10px;
     text-transform: uppercase;
-    color: #10161A;
+    color: #fff;
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
 .pricing .pricing_content {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px 20px;
     list-style: none;
 }
 
 .pricing .pricing_content li{
     margin: 0 0 20px;
+}
+
+.pricing .pricing_content hr{
+    border-width: 0.2rem;
+    max-width: 50px;
+}
+
+.pricing .pricing_content p{
+    font-size: 1.2rem;
 }
 
 .pricing .submit_button{

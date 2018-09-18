@@ -5,7 +5,8 @@ const socialContacts = (props) =>{
     let social_contact = (
         props.social_contacts.map((c, i)=>{
             let keyName = Object.keys(c)[0];
-            let icon = keyName ==="twitter" ? "fa-twitter" : keyName === "facebook" ? "fa-facebook" : "fa-instagram"
+            let icon = keyName ==="twitter" ? "fa-twitter" : keyName === "facebook" ? "fa-facebook" :
+                keyName === "instagram" ? "fa-instagram" : keyName === "linkedIn" ? "fab fa-linkedin" : null
             let link = c[keyName]
             return(
                 <a key={`${i}`} href={`${link}`}>

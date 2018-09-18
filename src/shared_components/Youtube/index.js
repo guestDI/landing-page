@@ -1,10 +1,10 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-const youtube = () => {
+const youtube = props => {
     const opts = {
-        height: '390',
-        width: '640',
+        height: '100%',
+        width: '100%',
         playerVars: {
             autoplay: 0
         }

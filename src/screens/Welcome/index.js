@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import "./index.css";
 import NavigationBar from '../../shared_components/NavigationBar'
-import ContactUs from '../../shared_components/ContactUs/index'
 import PriceComponent from '../../shared_components/PriceComponent'
 import Contacts from './Contacts'
 import SocialContacts from './Contacts/SocialContacts/index'
-import AboutUs from './AboutUs'
 import CommonButton from "../../shared_components/CommonButton";
 import Youtube from "../../shared_components/Youtube/index"
 
 const social_contacts = [
     {twitter: "https://twitter.com/"},
     {instagram: "https://www.instagram.com"},
-    {facebook: "https://www.facebook.com/"}
+    {facebook: "https://www.facebook.com/st1ll"},
+    {linkedIn: "https://www.linkedin.com/in/roman-ventskus-9233a257/"}
 ]
 
 const about_links = [
@@ -32,7 +31,7 @@ class Welcome extends Component {
     }
 
     scrollInToSection = () => {
-        this.refs.prices.scrollIntoView({block: 'end', behavior: 'smooth'});
+        this.refs.prices.scrollIntoView({block: 'start', behavior: 'smooth'});
     }
 
     scrollToTop = () => {
@@ -88,7 +87,7 @@ class Welcome extends Component {
                             <hr/>
                         </div>
                         <div className="welcome-text col-md-8 col-centered">
-                            <p>Андромеда фитнес позволит легко управлять тренажерным залом</p>
+                            <p>Андромеда фитнес позволит легко управлять тренажерным залом, автоматизируя все необходимые операции, а также предоставляя возможность управления посещениями в один клик</p>
                         </div>
                         <div className="get_started_wrapper">
                             <CommonButton className="welcome_button" text="Начать" onClick={this.scrollInToSection}/>
@@ -157,7 +156,9 @@ class Welcome extends Component {
                         </div>
                     </div>
                     <div className="row services-row">
-                        <Youtube/>
+                        <div className="video">
+                            <Youtube width="640" height="390"/>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -185,7 +186,7 @@ class Welcome extends Component {
                     </div>
                     <div className="row price-row">
                         <div className="col-xs-12 col-sm-4 price_col">
-                            <PriceComponent price="Бесплатно" tariffName="Базовый" onClick={this.onSignUpCall} duration="30 дней"/>
+                            <PriceComponent price="Бесплатно" tariffName="Базовый" popular={true} onClick={this.onSignUpCall} duration="30 дней"/>
                         </div>
                         {/*<div className="col-xs-12 col-sm-4 price_col">*/}
                             {/*<PriceComponent popular tariffName="Standart" onClick={this.onSignUpCall}/>*/}
@@ -203,9 +204,9 @@ class Welcome extends Component {
                         <div className="col-md-3 contact-section__contacts">
                             <Contacts />
                         </div>
-                        <div className="col-md-3 contact-section__about">
-                            <AboutUs about_links={about_links}/>
-                        </div>
+                        {/*<div className="col-md-3 contact-section__about">*/}
+                            {/*<AboutUs about_links={about_links}/>*/}
+                        {/*</div>*/}
                     </div>
                     <div className="row row-centered social_icons">
                         <SocialContacts social_contacts={social_contacts}/>

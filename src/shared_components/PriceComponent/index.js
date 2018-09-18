@@ -14,27 +14,31 @@ const priceComponent = (props) => {
             <div className="pricing_head">
                 <span className="price_title">{props.tariffName}</span>
                 <div className="price">
-                    <h3>
+                    <h4>
                         {props.price}
                         <span className="duration">{props.duration}</span>
-                    </h3>
+                    </h4>
                 </div>
             </div>
             <ul className="pricing_content">
                 <li>
-                    <p>Функциональность без ограничений</p>
+                    <p>Работайте с системой без каких-либо ограничений</p>
                 </li>
+                <hr/>
                 <li>
-                    <p>Мобильный клиент с онлайн абонементом</p>
+                    <p>Регистрация неограниченного числа клиентов</p>
                 </li>
+                <hr/>
                 <li>
-                    <p>Неограниченное число клиентов</p>
+                    <p>Мобильный клиент с возможностью испольлзовать онлайн абонемент</p>
                 </li>
+                <hr/>
                 <li>
                     <p>Формирование отчетности без каких-либо ограничений</p>
                 </li>
+                <hr/>
                 <li>
-                    <p>24/7 поддержка</p>
+                    <p>Круглосуточная поддержка</p>
                 </li>
             </ul>
             <CommonButton className="submit_button" text="Выбрать" onClick={props.onClick}/>
