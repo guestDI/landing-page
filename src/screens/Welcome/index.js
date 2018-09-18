@@ -81,10 +81,10 @@ class Welcome extends Component {
                 <div className="container">
                     <div className="row row-centered">
                         <div className="welcome-header col-md-10 col-centered ">
-                            <h1 className=" text-upper-case">
+                            <img src={require('../../images/android-chrome-256x256.png')} style={{width: '80px', height: '80px'}} />
+                            <h1 className="text-upper-case" style={{paddingBottom: '20px'}}>
                                 Лучший способ управления свом бизнесом
                             </h1>
-                            <hr/>
                         </div>
                         <div className="welcome-text col-md-8 col-centered">
                             <p>Андромеда фитнес позволит легко управлять тренажерным залом, автоматизируя все необходимые операции, а также предоставляя возможность управления посещениями в один клик</p>
