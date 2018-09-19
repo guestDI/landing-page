@@ -91,7 +91,6 @@ class Welcome extends Component {
                         </div>
                         <div className="get_started_wrapper">
                             <CommonButton className="welcome_button" text="Начать" onClick={this.scrollInToSection}/>
-                            {/*<CommonButton className="welcome_button demo" text="Демо" onClick={this.onDemoOpen}/>*/}
                             <div className="scroll_down" >
                                 <div className="scroll_down__button" style={{display: "block"}} />
                             </div>
@@ -148,7 +147,7 @@ class Welcome extends Component {
             </section>
 
             <section id="projects" className="about-section">
-                <div className="container">
+                <div className="container demo-container">
                     <div className="row row-centered">
                         <div className="col-md-8 col-centered section-header">
                             <h2 className="text-upper-case">Демо</h2>
@@ -156,8 +155,21 @@ class Welcome extends Component {
                         </div>
                     </div>
                     <div className="row services-row">
-                        <div className="video">
-                            <Youtube width="640" height="390"/>
+                        <div className="col-md-12 col-centered section-header">
+                            <div className="col-lg-5 col-sm-5 col-xs-5 ">
+                                <p>
+                                    Данное видео продемонстрирует вам все возможности системы andromeda, включая работу с клиентами,
+                                    управление посещениями, работу с профилемя тренеров и клиентов и многое другое.
+                                </p>
+                                <p style={{paddingTop: '50px', paddingBottom: '10px'}}>
+                                   Если вы все еще не уверены, что наша система может принести вам пользу и оптимизировать работу вашего зала, то мы предлагаем воспользоватсья возможностью
+                                    попробовать ее в деле, используя специальный тестовый аккаунт
+                                </p>
+                                <CommonButton className="get_started_wrapper_button" text="Попробовать" onClick={this.onDemoOpen}/>
+                            </div>
+                            <div className="col-lg-7 col-sm-7 col-xs-7 col-centered  video">
+                                <Youtube width="640" height="390"/>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -243,8 +243,12 @@ of those sections to manage the look and feel of the site. */
     margin: auto;
 }
 
+.demo-container {
+    width: 80% !important;
+}
+
 .video {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     width: 640px;
     height: 390px;
 }
