@@ -92,7 +92,7 @@ class Welcome extends Component {
                         <div className="get_started_wrapper">
                             <CommonButton className="welcome_button" text="Начать" onClick={this.scrollInToSection}/>
                             <div className="scroll_down" >
-                                <div className="scroll_down__button" style={{display: "block"}} />
+                                <div className="scroll_down__button" style={{display: "block"}} onClick={this.scrollInToSection}/>
                             </div>
                         </div>
                     </div>
@@ -116,19 +116,19 @@ class Welcome extends Component {
                         <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/statistic.png')}  />*/}
                             <h4>Снижайте затраты</h4>
-                            <p className="desc">Онлайн версия не требующая установки. Аналитические отчеты по продажам и посещениям позволяют выявить непопулярные занятия, услуги, персонал и минимизировать расходы на них.</p>
+                            <p className="desc">Подробные отчеты позволяют выявить непопулярные занятия, услуги, персонал и минимизировать расходы на них.</p>
                         </div>
                         <div className="service-tile col-lg-4 col-xs-4">
                             {/*<img src={require('../../../images/statistic.png')}  />*/}
                             <h4>Экономьте время</h4>
-                            <p className="desc">Экономит время и минимизирует ошибки. Все часто используемые действия автоматизированы и легко доступны. Удобно записать, отметить посещение.
-                                Программа автоматически напоминает клиентам и персоналу о тренировках, позволяет контролировать расписание.</p>
+                            <p className="desc">Все часто используемые действия автоматизированы и легко доступны. Программа автоматически напоминает
+                                клиентам и персоналу о тренировках, позволяет контролировать расписание.</p>
                         </div>
                         <div style={{paddingTop: '30px'}}>
                             <div className="service-tile col-lg-4 col-xs-4">
                                 {/*<img src={require('../../../images/statistic.png')}  />*/}
                                 <h4>Мобильный клиент</h4>
-                                <p className="desc">Больше нет нужды носить с собой клубную карту. Мобильный клиент позволит посетителям вашего зала использовать его в качестве единой карты доступа, а также для отслеживания текущго статуса абонементов.</p>
+                                <p className="desc"> Мобильный клиент позволит посетителям вашего зала использовать его в качестве единой карты доступа, а также для отслеживания текущго статуса абонементов.</p>
                             </div>
                             <div className="service-tile col-lg-4 col-xs-4">
                                 {/*<img src={require('../../../images/rule.png')}  />*/}
