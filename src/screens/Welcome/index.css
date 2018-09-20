@@ -88,14 +88,12 @@ hr{
 
 /*Get Started button styles ----begin*/
 .get_started_wrapper_button{
-    border-radius: 50px;
     background: #f05f40;
     padding: 10px 40px;
     border: 2px solid #f05f40;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
 }
 .get_started_wrapper_button:focus{
     outline:none;
@@ -108,11 +106,8 @@ hr{
     background-color: #f05f40 !important;
     /*border: solid #d85e3e !important;*/
     outline: none;
-    width: 130px;
-}
-
-.welcome_button.demo{
-    margin-left: 15px;
+    width: 160px;
+    font-size: 16px;
 }
 
 .welcome_button:focus {
@@ -182,7 +177,7 @@ of those sections to manage the look and feel of the site. */
     min-height: 680px;
     padding-bottom: 0;
     height: 100vh;
-    padding-top: 70px;
+    padding-top: 7%;
     text-align: center;
     background: url('../../images/maxresdefault1.jpg') center center ;
     -webkit-background-size: cover;
